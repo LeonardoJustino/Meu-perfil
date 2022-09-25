@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/874/399/786/forest-4k-backgrounds-for-desktop-hd-backgrounds-wallpaper-preview.jpg);
+    background-position:top  center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+     background-color: #2b2338;
+}
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 100%;
+}
+/*header -> cabeça do site*/
+header{
+        padding-top: 32px;
+        height: calc(120px + 32px);
+        
+
+}
+/*larg, margin, borda e display*/
+header div{
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+}
+/*largura e bordar circular*/
+header div img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+main{
+    max-width: 360px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    
+    margin-top: 32px;
+    overflow: hidden;
+}
+section {
+    color: black;
+    border: solid 2px #073a79;
+    padding-top: 4px;
+    border-radius: 10px;
+    background: #121214;
+    margin-bottom: 20px;
+}
+section img:hover{
+    transform: scale(1.2);
+}
+section h1 {
+    letter-spacing: -0.47px;
+    color: white;
+}
+/*letter-spacing serve para arrumar os espaçamentos
+entre as letras*/
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+/*
+display: o que deixa as imagens na mesma linha
+gap: espaço entre as imagens
+margin-top: espaço de cima das box
+list-style: style da lista, onde vai esconder as bolinhas
+*/
+section ul{
+    display:flex;
+    gap: 15px;
+    margin-top:24px ;
+    list-style: none;
+    flex-wrap: wrap;
+}
+/*
+padding: preenchimento dentro das box
+border: borda, não vi diferença com ou sem
+*/
+section h2 {
+    letter-spacing: -0.47px;
+}
+section div{
+    padding: 22px;
+   
+    border-radius: 8px;
+    
+}
+/*Edição das fotos dentro das box*/
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+.persons-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+    
+}
+
+section {
+    width: 360px;
+    overflow: hidden;
+}
+section ul{
+    flex-wrap: nowrap;
+    gap: 0;
+}
+/*Animation*/
+header {
+    animation:fromtop.7s;
+}
+@keyframes fromtop{
+    from {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+        
+    }
+    
+}
